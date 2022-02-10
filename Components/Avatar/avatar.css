@@ -1,0 +1,89 @@
+.circular-avatar {
+    border-radius: 50%;
+    margin: 1rem 1rem;
+  }
+  
+  .avatar {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+  }
+  
+  .square-avatar {
+    border-radius: 0.5rem;
+    margin: 1rem 1rem;
+  }
+  
+  .avatar>div {
+    position: relative;
+    max-height: 200px;
+  }
+  
+  .avatar-Xl {
+    max-width: 5rem;
+  }
+  
+  .avatar-L {
+    max-width: 4rem;
+  }
+  
+  .avatar-M {
+    max-width: 3rem;
+  }
+  
+  .avatar-S {
+    max-width: 2rem;
+  }
+  
+  .avatar-Xs {
+    max-width: 1.5rem;
+  }
+  
+  .status-position-Xl {
+    padding: 6px;
+    bottom: 1.7rem;
+    left: 4.6rem;
+  }
+  
+  .status-position-L {
+    padding: 5.5px;
+    bottom: 1.6rem;
+    left: 3.8rem;
+  }
+  
+  .status-position-M {
+    padding: 5px;
+    bottom: 1.4rem;
+    left: 3.1rem;
+  }
+  
+  .status-position-S {
+    padding: 4.4px;
+    bottom: 1.2em;
+    left: 2.3rem;
+  }
+  
+  .status-position-Xs {
+    padding: 3.4px;
+    bottom: 1.5rem;
+    left: 2rem;
+  }
+  
+  .avatar-status {
+    position: absolute;
+    display: inline-block;
+    border: white solid 2px;
+    border-radius: 50%;
+  }
+  
+  .status-online {
+    background-color: green;
+  }
+  
+  .status-offline {
+    background-color: gray;
+  }
+  
+  .status-busy {
+    background-color: red;
+  }
