@@ -61,7 +61,7 @@ body {
   opacity: 0.9;
 }
 
-main {
+.landing-main {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -120,6 +120,8 @@ main {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: sticky;
+  top:0
 }
 
 .navbar-icons {
@@ -238,4 +240,123 @@ main {
   .navbar-icons {
     margin-right: 0.8rem;
   }
+}
+
+
+/* Docs Page styling */
+.docs-body-container {
+  /* grid - properties */
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+}
+
+.drawer
+{
+border-right:10px solid red;
+padding: 1.2em 1.2em 1.2em 3rem;  
+    width: 14rem;
+    height:100%;
+    overflow-y: auto;
+    background-color: greenyellow;
+    position: fixed;
+    top: 6.1em;
+    bottom: 0px;
+
+
+}
+
+/*
+@media screen and (min-width: 858px) and (max-width: 991px) {
+  .docs-body-container {
+     
+      display: grid;
+      grid-template-columns: 12rem 1fr;
+  }
+
+  .drawer {
+      padding: 1.2rem;
+      width: 12rem;
+  }
+}
+*/
+.nested-drawer-title
+{
+  margin:0px;
+  font-size: 1.1rem;
+  background-color: transparent;
+    border: none;
+    width: 95%;
+    position: relative;
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+
+}
+.drawer-links-container {
+  /* flex - properties */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.drawer-link {
+  padding: 0.2em 0.5em;
+  margin: 0 0.6em;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+   background-color: white;
+
+  /* flex - properties */
+  display: flex;
+  align-items: center;
+
+}
+
+.drawer-link:hover {
+  background-color: yellow;
+}
+
+.component-content-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 100%;
+position: relative;
+top:0;
+}
+
+.component-text {
+  width: 36em;
+  line-height: 1.8em;
+  margin-top: 0;
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+h2.component-subheading {
+  width: max-content;
+  margin: 0;
+  margin: 1em 0;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+h3.component-subheading {
+  width: max-content;
+  margin: 0;
+  font-size: 1rem;
+  max-width: 100%;
+}
+.component-heading {
+  font-size: 2.2rem;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 0.5em;
+  max-width: 100%;
 }
