@@ -1,0 +1,80 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  :root {
+    --primary-color:rgb(70, 8, 241);
+    --gray-text: gray;
+    --secondary-color: #BEDCFE;
+    --error: rgb(241, 55, 55);
+    --warning: rgb(247, 184, 67);
+    --success: lightgreen;
+  }
+
+  .btn {
+padding: 1rem;
+border-radius: 1rem;;
+
+  }
+  
+  .btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn-danger {
+    background-color: var(--error);
+  }
+  
+  .btn-primary-outlined {
+    border: var(--primary-color) solid 1px;
+    color: var(--primary-color);
+  }
+  
+  .btn-secondary-outlined {
+    color: var(--gray-text);
+    background-color: white;
+  }
+  
+  .btn-danger-outlined {
+    border: var(--error) solid 1px;
+    color: var(--error);
+  }
+  
+  .btn-primary-outlined:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+  
+  .btn-secondary-outlined:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .btn-danger-outlined:hover {
+    background-color: var(--error);
+    color: white;
+  }
+  
+  .flex-align {
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .float-button {
+    border-radius: 50%;
+    border: none;
+    padding: 0.7rem;
+    cursor: pointer;
+  }
+  
+  .float-button:hover {
+    background-color: var(--secondary-color);
+  }
+  
+  .icon {
+    width: 2rem;
+  }
