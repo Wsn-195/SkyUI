@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buttons</title>
     <meta name="description" content="Alert Component">
+    <script src="https://kit.fontawesome.com/13c2d874aa.js" crossorigin="anonymous" ></script>
 	<link rel="stylesheet" href="/Components/utility.css">
     <link rel="stylesheet" href="button.css">
-    <script
-    src="https://kit.fontawesome.com/13c2d874aa.js"
-    crossorigin="anonymous"
-  ></script>
+    
 
 </head>
 <body>
@@ -30,20 +28,32 @@
     <h3>Icon Buttons</h3>
 	<div class="button-icon flex-row">
 		<button class=" btn btn-primary flex-row flex-align">
-			<i class="fa fa-home"></i>
+            <i class="fas fa-shopping-cart"></i>
 			<span>Add to Cart</span>
 		</button>
 		<button class=" btn btn-danger flex-row flex-align">
-            <i class="icon-bug"></i>
+            <i class="fas fa-minus-circle"></i>
 			<span>Delete</span>
+		</button>
+
+        <button class=" btn btn-secondary flex-row flex-align">
+            <i class="fas fa-plus"></i>
+			<span>Add</span>
 		</button>
 	</div>
 
-	<div class="button-float">
-		<button class=" float-button primary-button">
-			<img src="a1.svg" alt="Icon">
+    <h3>Float Buttons</h3>
+    <div class="flex-row">
+
+		<button class=" float-button primary-button button-float">
+			<i class="fas fa-plus"></i>
 		</button>
-	</div>
-    
+
+   
+		<button class=" float-button primary-button button-float">
+			<i class="fas fa-minus"></i>
+		</button>
+
+    </div>
 </body>
 </html>

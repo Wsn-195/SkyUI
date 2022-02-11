@@ -1,7 +1,4 @@
-body {
-    font-family: sans-serif;
-  }
-  
+
   :root {
     --primary-color:rgb(70, 8, 241);
     --gray-text: gray;
@@ -26,10 +23,12 @@ border-radius: 1rem;;
     background-color: var(--secondary-color);
   }
   
+ 
+  
   .btn-danger {
     background-color: var(--error);
   }
-  
+
   .btn-primary-outlined {
     border: var(--primary-color) solid 1px;
     color: var(--primary-color);
