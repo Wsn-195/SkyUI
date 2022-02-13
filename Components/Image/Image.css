@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .image-responsive {
+    min-width: 100%;
+    height: auto;
+  }
+  
+  .image-round {
+    border-radius: 50%;
+    min-width: 100%;
+    height: auto;
+  }
