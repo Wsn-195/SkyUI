@@ -1,0 +1,45 @@
+body {
+    font-family: sans-serif;
+  }
+  
+  .input {
+    position: relative;
+    margin: 1rem;
+  }
+  
+  .input-text {
+    border-radius: 0.3em;
+    border: gray solid 2px;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .placeholder {
+    position: absolute;
+    top: -1rem;
+    font-size: 1rem;
+    left: 1rem;
+    background-color: white;
+    padding: 0.1rem;
+  }
+  
+  .input-success {
+    border: green solid 2px;
+  }
+  
+  .input-error {
+    border: red solid 2px;
+  }
+  
+  .input-warn {
+    border: orange solid 2px;
+  }
+  
+  .success {
+    color: green;
+  }
+  
+  .errror {
+    color: red;
+  }
+  
+ 
