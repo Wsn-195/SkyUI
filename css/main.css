@@ -22,6 +22,11 @@
   box-sizing: border-box;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 #active-page {
   color: red;
   font-weight: 500;
@@ -160,8 +165,13 @@ body {
 
 .footer
 {
- position: fixed;
-bottom: 0rem;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+ margin-top: -4rem;
+    overflow:hidden;
+
+
 height: 4rem;
 width: 100%;
 grid-area: f;
@@ -294,4 +304,158 @@ margin-bottom: 1rem;
   .navbar-icons {
     margin-right: 0.8rem;
   }
+}
+
+
+/* Docs Page styling */
+.docs-body-container {
+  /* grid - properties */
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  grid-template-areas: "a a m m m"
+                        "a a m m m"
+                        "a a m m m"               ;
+}
+
+.drawer
+{
+border-right:10px solid red;
+padding: 1.2em 1.2em 1.2em 3rem;  
+width: 14rem;
+height: 100vh;
+
+    overflow-y: auto;
+    background-color: greenyellow;
+    
+    grid-area: a;
+
+
+}
+
+/*
+@media screen and (min-width: 858px) and (max-width: 991px) {
+  .docs-body-container {
+     
+      display: grid;
+      grid-template-columns: 12rem 1fr;
+  }
+
+  .drawer {
+      padding: 1.2rem;
+      width: 12rem;
+  }
+}
+*/
+
+
+@media screen and (max-width: 991px) {
+  .docs-body-container {
+     
+      display: flex;
+      flex-direction: column;
+  }
+
+  .drawer {
+      padding: 1.2rem;
+      width: 15rem;
+      position: absolute;
+  }
+
+
+  .component-content-container {
+    width: 30%;
+ 
+    padding: 2em;
+    max-width: 100%;
+  position: relative;
+  top:0;
+  left:12rem
+  }
+
+}
+
+
+
+
+
+.nested-drawer-title
+{
+  margin:0px;
+  font-size: 1.1rem;
+  background-color: transparent;
+    border: none;
+    width: 95%;
+    position: relative;
+    /* flex - properties */
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+
+
+}
+.drawer-links-container {
+  /* flex - properties */
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.drawer-link {
+  padding: 0.2em 0.5em;
+  margin: 0 0.6em;
+  font-size: 1.2rem;
+  line-height: 1.6rem;
+  border-radius: 0.5em;
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+   background-color: white;
+
+  /* flex - properties */
+  display: flex;
+  align-items: center;
+
+}
+
+.drawer-link:hover {
+  background-color: yellow;
+}
+
+.component-content-container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 100%;
+position: relative;
+top:0;
+}
+
+.component-text {
+  width: 36em;
+  line-height: 1.8em;
+  margin-top: 0;
+  font-size: 1.2rem;
+  max-width: 100%;
+}
+
+h2.component-subheading {
+  width: max-content;
+  margin: 0;
+  margin: 1em 0;
+  font-size: 1.5rem;
+  max-width: 100%;
+}
+
+h3.component-subheading {
+  width: max-content;
+  margin: 0;
+  font-size: 1rem;
+  max-width: 100%;
+}
+.component-heading {
+  font-size: 2.2rem;
+  width: max-content;
+  margin: 0;
+  margin-bottom: 0.5em;
+  max-width: 100%;
 }
