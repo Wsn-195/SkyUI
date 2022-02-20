@@ -7,6 +7,7 @@
     border: 2px solid lightgray;
     background-color: rgb(220, 236, 236);
     padding: 0.5rem;
+    position: relative;
     
 }
 .card-vertical:hover{
@@ -79,15 +80,15 @@
     opacity: 0.7;
     margin-left: 0;
     z-index: 10;
+    position: absolute;
+    top:0px;
     }
     
 .card-overlay-text{
     color: red;
     font-weight: bolder;
+    
 }
-
-
-
 
 .card-box-container
 {
@@ -105,4 +106,71 @@
       gap:2rem
   }
 
-  
+  .card-horizontal
+  {
+    height: calc(3 * 9rem);
+    width: calc(3 * 18rem);
+    display: grid;
+    border: 2px solid lightgrey;
+    background-color: white;
+    padding: 1rem;
+    grid-template-areas:
+    "img des"
+    "img cta";
+
+position: relative;
+    
+}
+.card-horizontal-product-img
+{
+    grid-area: img;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(1.5 * 9rem);
+    margin: auto;
+}
+.card-horizontal-img
+{
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+}
+.card-horizontal-description
+{
+    grid-area: des;
+    max-width: 120%;
+    padding: 1rem;
+    min-width: calc(1.2 * 16rem);
+
+}
+.card-horizontal-cta
+{
+    grid-area: cta;
+    display: flex;
+    justify-content: center;  
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.card-horizontal-badge{
+    padding: .5rem;
+    background-color: lightgray;
+    position: absolute  ;
+    border-radius: 50%;
+    margin-left: auto;
+    z-index: 10;
+    opacity: 0.7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    right: 0;
+}
+.card-horizontal-badge:hover {
+    transform: scale(1.1);
+    transition: ease-in-out .2s;
+    color: red;
+}
